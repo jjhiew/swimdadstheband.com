@@ -16,6 +16,9 @@
         h1 {
             font-size: 3em;
         }
+        h2 {
+            font-size: 2em;
+        }        
         body { font-family: Arial, sans-serif; margin: 0px}
         header { 
             text-align: center; 
@@ -74,6 +77,25 @@
                 padding-bottom: 20px;
             }
         }
+
+        .video-wrapper {
+            max-width: 530px;
+            width: 100%;
+            margin: 0 auto; /* center the video */
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }     
     </style>
 </head>
 <body>
@@ -91,42 +113,46 @@
     <section class="socials">
         <h2>Past Performances</h2>
 
-        <div>
-            <h3>Mayfair @ Rosedale Park, Toronto on May 10 2025</h3>
-            <iframe width="560" height="315" 
-                src="https://www.youtube.com/embed/videoseries?list=PLEmEZxnIB9mB-8U5rg1pzBi6kDLp8mlf7" 
-                title="Swim Dads Youtube - Mayfair 2025" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" 
-                allowfullscreen>
-            </iframe>
+        <h3>Mayfair @ Rosedale Park, Toronto on May 10 2025</h3>        
+        <div class="video-wrapper">
+            <div class="video-container">
+                <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/videoseries?list=PLEmEZxnIB9mB-8U5rg1pzBi6kDLp8mlf7" 
+                    title="Swim Dads Youtube - Mayfair 2025" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
         </div>
 
         <br /><br />
 
-        <div>
-            <h3>Monarch Tavern, Toronto on January 4 2025</h3>
-            <iframe width="560" height="315" 
-                src="https://www.youtube.com/embed/videoseries?list=PLEmEZxnIB9mDRYsbtZXRN5vEa50XX-ANH" 
-                title="Swim Dads Youtube - Monarch 2025" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        <h3>Monarch Tavern, Toronto on January 4 2025</h3>
+        <div class="video-wrapper">
+            <div class="video-container">
+                <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/videoseries?list=PLEmEZxnIB9mDRYsbtZXRN5vEa50XX-ANH" 
+                    title="Swim Dads Youtube - Monarch 2025" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
 
-                allowfullscreen>
-            </iframe>
+                    allowfullscreen>
+                </iframe>
+            </div>
         </div>
 
         <br /><br />
 
-        <p>Check out more performances on our Youtube: <a href="https://www.youtube.com/@SwimDadsTheBand" target="_blank">@SwimDadsTheBand</a></p>
+        <p>Check out more performances on our Youtube <a href="https://www.youtube.com/@SwimDadsTheBand" target="_blank">@SwimDadsTheBand</a></p>
 
     </section>
 
 
     <section class="setlist">
         <h2>Set List</h2>
-        <p>These are just some of the songs we can include in our set list.</p>
+        <p>These are just some of the many songs we can include in our set list.</p>
         <ul class="setlist-ul">
             <li>Audioslave - <i>Like a Stone</i></li>
             <li>Black Keys - <i>I Got Mine</i></li>

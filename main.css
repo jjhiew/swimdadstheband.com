@@ -180,7 +180,12 @@
         label, input, textarea { display: block; width: 100%; margin-top: 10px; }
         input, textarea { padding: 10px; }
         button { padding: 10px 20px; margin-top: 10px; }
-        .bg-black { background-color: black; padding: 10px; }
+        .bg-black { 
+            background-color: rgba(0,0,0,0.65); 
+            padding: 10px; 
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
+        }
+
         footer {text-align: center;}
 
         @media only screen and (max-width: 600px) {
@@ -197,6 +202,13 @@
 
             section {
                 padding: 10px;
+            }
+
+            .main-title {
+                font-size: 1.45em;
+            }
+            .bg-black {
+                padding: 5px;
             }
         }
 

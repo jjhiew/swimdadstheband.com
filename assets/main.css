@@ -287,14 +287,6 @@ footer {
   margin: 0 auto;
 }
 
-/* .photo-grid img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 8px;
-  object-fit: cover;
-} */
-
 .photo-grid img {
   width: 100%;
   aspect-ratio: 1 / 1; /* Makes all previews square. Change to 16 / 9 or 4 / 3 for rectangles */
